@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color:blue;
+        }
+        label {
+            color: green;
+        }
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Login:</h1>
+    <form action="/" method="POST">
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="user"><br><br>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>{{ err_msg }}</h2>
+</body>
+</html>
